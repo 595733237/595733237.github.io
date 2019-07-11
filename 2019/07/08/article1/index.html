@@ -42,7 +42,6 @@
 <li>等等；</li>
 </ol>
 </blockquote>
-<p></p>
 <h2 id="软件准备"><a href="#软件准备" class="headerlink" title="软件准备"></a>软件准备</h2><ul>
 <li><ol>
 <li>安装<a href="https://nodejs.org/en/" target="_blank" rel="noopener">node.js</a>;</li>
@@ -105,7 +104,7 @@
 <p><a href="http://blog.liuxianan.com/windows-port-bind.html" target="_blank" rel="noopener">http://blog.liuxianan.com/windows-port-bind.html</a></p>
 <p>&ensp;&ensp;第一次初始化的时候hexo已经帮我们写了一篇名为 Hello World 的文章，默认的主题比较丑，打开时就是这个样子：<br><img src="/2019/07/08/article1/test.jpg" alt></p>
 <h3 id="9-上传到github"><a href="#9-上传到github" class="headerlink" title="9.上传到github"></a>9.上传到github</h3><p>&ensp;&ensp;如果你一切都配置好了，发布上传很容易，一句hexo d就搞定，当然关键还是你要把所有东西配置好。首先，ssh key肯定要配置好。其次，配置_config.yml中有关deploy的部分：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: git@github.com:liuxianan/liuxianan.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">deploy:</span><br><span class="line">  type: git</span><br><span class="line">  repository: git@github.com:595733237/595733237.github.io.git</span><br><span class="line">  branch: master</span><br></pre></td></tr></table></figure>
 <p>还需要安装一个插件，否则直接hexo d的话一般会报如下错误：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">Deployer not found: github 或者 Deployer not found: git</span><br></pre></td></tr></table></figure>
 <figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
